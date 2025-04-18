@@ -7,10 +7,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class RabbitMQConfig{
-    @Bean
-    public Queue orderQueue(){
-        return new Queue("order.queue", true);
-    }
+//    @Bean
+//    public Queue orderQueue(){
+//        return new Queue("order.queue", true);
+//    }
     @Bean
     public Jackson2JsonMessageConverter jsonMessageConverter() {
         return new Jackson2JsonMessageConverter();
